@@ -36,3 +36,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 pytest -q
 ```
+
+## Design explanation / complexity cost
+
+The Adapter converts kilograms to pounds without changing the original LegacyCarrier. One complexity cost is that it adds another class that needs to be tested and maintained.
